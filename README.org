@@ -1,0 +1,15 @@
+#+TITLE: nand2tetris
+#+AUTHOR: Kyure_A
+#+OPTIONS: toc:nil
+
+* やる経緯
+
+#+html: <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">誕生日プレゼント来て嬉しくなってしまった　逆にフォロワーの本名も覚えつつある　ありがとうございます <a href="https://t.co/tKkSjP8AFd">pic.twitter.com/tKkSjP8AFd</a></p>&mdash; キュレェ (@Kyure_A) <a href="https://twitter.com/Kyure_A/status/1546024390327816192?ref_src=twsrc%5Etfw">July 10, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+もともと興味があり，フォロワーにもらったことがきっかけ。
+プログラミングエアプでも低レイヤが把握できてるならまだマシだろという甘い考えから始めた
+
+* 進捗
+ここはログ形式にします
+
+1章を読み終わってこのリポジトリのセットアップをした (2022/08/28 17:10)
