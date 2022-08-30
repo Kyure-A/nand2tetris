@@ -14,4 +14,27 @@ CHIP Mux {
     OUT out;
 
     PARTS:
+    Not(in=a, out=nota);
+    Not(in=b, out=notb);
+    Not(in=sel, out=notsel);
+
+    // a and notb and notsel
+    And(a=a, b=notb, out=a_and_notb);
+    And(a=a_and_notb, b=notsel, out=a_and_notb_and_notsel);
+
+    // a and b and notsel
+    And(a=a, b=b, out=a_and_b);
+    And(a=a_and_b, b=notsel, out=a_and_b_and_notsel);
+
+    // nota and b and sel
+    And(a=nota, b=b, out=nota_and_b);
+    And(a=nota_and_b, b=sel, out=nota_and_b_and_sel);
+
+    // a and b and sel
+    And(a=a_and_b, b=sel, out=a_and_b_and_sel);
+
+    // out
+    Or(a=a_and_notb_and_notsel, b=a_and_b_and_notsel, out=l);
+    Or(a=nota_and_b_and_sel, b=a_and_b_and_sel, out=r);
+    Or(a=l, b=r, out=out);
     }
